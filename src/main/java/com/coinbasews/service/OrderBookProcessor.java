@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class OrderBookProcessor {
 
-    private ConcurrentHashMap<String, OrderBook> orderBookStore = new ConcurrentHashMap<>();
+    private final ConcurrentHashMap<String, OrderBook> orderBookStore = new ConcurrentHashMap<>();
 
 
     private static OrderBookProcessor orderBookProcessor;
